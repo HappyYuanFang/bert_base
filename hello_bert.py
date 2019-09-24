@@ -1,6 +1,5 @@
 #coding:utf-8
 
-from scipy.spatial import distance
 from bert.extract_feature import BertVector
 pooling_strategy = "REDUCE_MEAN"
 #pooling_strategy = "NONE"
@@ -13,4 +12,4 @@ print(v1)
 v = bc.encode([s2])
 v2 = v["encodes"][0]
 print(v2)
-print(distance.cosine(v1,v2))
+
